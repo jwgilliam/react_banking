@@ -27,7 +27,7 @@ export default function UserForm() {
 
     let loggedIn = localStorage.getItem("activeUser")
 
-    // console.log(isSignedIn)
+
 
 
 
@@ -45,7 +45,7 @@ export default function UserForm() {
 
       return
     }
-    // console.log(foundUser)
+
   }
 
   const registrationHandler = () => {
