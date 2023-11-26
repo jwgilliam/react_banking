@@ -12,9 +12,9 @@ function App() {
     <>
       <Navbar />
       <UserProvider>
+        <UserForm />
         <Routes>
-          <Route path="/" element={<UserForm />} />
-          <Route path="home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="announcements" element={<Announcements />} />
           <Route path="banking" element={<Banking />} />
 

@@ -4,6 +4,20 @@
       "userName": "admin",
       "password": "admin",
       "id": 1
+    },
+    {
+      "userName": "moneyman",
+      "password": "money",
+      "email": "moneyman@email.gov",
+      "balance": 600,
+      "id": 2
+    },
+    {
+      "userName": "banklover",
+      "password": "ilovebank",
+      "email": "bankboy420@email.gov",
+      "balance": 5000,
+      "id": 3
     }
   ]
 }

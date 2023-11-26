@@ -1,4 +1,5 @@
 import { useState, useEffect, createContext } from "react"
+import { json } from "react-router-dom"
 
 
 export const UserContext = createContext()
@@ -35,6 +36,8 @@ export function UserProvider(props) {
       .then(getUsers)
       .then(loginUser(user))
   }
+
+
 
   return (
     <UserContext.Provider value={{ users, loginUser, getUsers, registerUser, isSignedIn, setSignedIn }}>{props.children}</UserContext.Provider>

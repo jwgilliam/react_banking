@@ -12,7 +12,7 @@ export default function UserForm() {
 
 
 
-  let signUpField = <><input type="email" className="user_email" required placeholder="e-mail"></input> <button className="register_button">Register</button></>
+  let signUpField = <><input type="email" className="user_email" required placeholder="e-mail"></input> <input type="text" className="initial_deposit" required placeholder="Initial Deposit"></input><button className="register_button">Register</button> </>
 
   const { users, loginUser, registerUser, isSignedIn, setSignedIn } = useContext(UserContext)
   useEffect(() => {
@@ -67,13 +67,17 @@ export default function UserForm() {
 
   const getFormData = () => {
     let email
+    let balance
     if (isSignup) {
       email = document.querySelector(".user_email").value
+      balance = parseInt(document.querySelector(".initial_deposit").value, 10)
     }
     const form = {
       userName: document.querySelector(".user_name").value,
       password: document.querySelector(".user_password").value,
-      email: email
+      email: email,
+      balance: balance
+
     }
     return form
   }
